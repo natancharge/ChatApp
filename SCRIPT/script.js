@@ -1,11 +1,11 @@
-const myName = prompt("Enter your name");
-const myPassword = prompt("Enter your password");
+const myName = localStorage.getItem("username");
+const myPassword = localStorage.getItem("password");
 
 function sendMessage() {
   // Get message
   var message = document.getElementById("message").value;
 
-  // Get existing messages from local storage
+  // Get existing messages from localStorage
   var database = localStorage.getItem('database');
 
   // Parse the existing database or initialize a new array if it doesn't exist
@@ -23,7 +23,7 @@ function sendMessage() {
   // Add the new message to the messages array
   messages.push(newMessage);
 
-  // Save the updated messages array back to local storage
+  // Save the updated messages array back to localStorage
   localStorage.setItem('database', JSON.stringify(messages));
 
   // Clear the input field
@@ -64,7 +64,7 @@ function deleteMessage(self) {
   // Get message ID
   var messageId = self.getAttribute("data-id");
 
-  // Get existing messages from local storage
+  // Get existing messages from localStorage
   var database = localStorage.getItem('database');
   var messages = database ? JSON.parse(database) : [];
 
@@ -73,19 +73,11 @@ function deleteMessage(self) {
     return msg.key !== messageId;
   });
 
-  // Save the updated messages array back to local storage
+  // Save the updated messages array back to localStorage
   localStorage.setItem('database', JSON.stringify(updatedMessages));
 
   // Update the display directly for the deleted message
   var messageElement = document.getElementById("message-" + messageId);
-  if (messageElement) {
-    messageElement.innerHTML = "Message deleted";
-  }
-}
-
-// Function to visually update the deleted message
-function attachDeleteMessageListener(snapshot) {
-  var messageElement = document.getElementById("message-" + snapshot.key);
   if (messageElement) {
     messageElement.innerHTML = "Message deleted";
   }
