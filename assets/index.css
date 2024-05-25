@@ -1,6 +1,8 @@
 :root {
     --color-primary: #F1ECCE;
     --color-secondary: #415876;
+    --color-purple: #A2A9CD;
+    --color-green: #A7C8B1;
     --color-white: #ffffff;
     --color-black: #000000;
     --br-sm-2: 14px;
@@ -14,6 +16,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Assistant", "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
 }
 
 body {
@@ -24,6 +27,18 @@ body {
 }
 
 .wrapper {
-    background: var(--color-secondary);
     width: 420px;
+    background: var(--color-purple);
+    color: var(--color-white);
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    background: ;
 }
