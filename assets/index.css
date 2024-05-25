@@ -1,0 +1,29 @@
+:root {
+    --color-primary: #F1ECCE;
+    --color-secondary: #415876;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --br-sm-2: 14px;
+    --box-shadow1: 0 3px 15 rgb(0, 0, 0.3);
+    --transition: all .4s ease-in-out;
+    --grid-col: repeat(2, 1fr);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Assistant", "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--color-primary);
+}
+
+.wrapper {
+    background: var(--color-secondary);
+    width: 420px;
+}
