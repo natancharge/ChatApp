@@ -99,3 +99,35 @@ body {
     color: var(--color-white);
     font-weight: 600;
 }
+
+.footer {
+    height: 60px;
+    width: 100%;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  
+  .footer-link {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-text {
+    margin: 0;
+  }
