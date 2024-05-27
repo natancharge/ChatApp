@@ -106,6 +106,53 @@ h1.main-title {
     margin-top: 20px;
 }
 
+.about-section {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+}
+
+.about-section .vision {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-member {
+    width: 48%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    color: var(--color-secondary);
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: var(--color-black);
+}
+
 .footer {
     bottom: -20px;
     width: 100%;
