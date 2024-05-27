@@ -173,7 +173,7 @@ h1.main-title {
 }
 
 .footer-content img {
-    height: 100px; /* Adjust the height of the logo */
+    height: 100px; 
     width: auto; /* Maintain aspect ratio */
 }
 
