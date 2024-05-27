@@ -120,7 +120,7 @@ h1.main-title {
 
 .about-section .vision {
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 
 .team {
@@ -128,6 +128,7 @@ h1.main-title {
     flex-wrap: nowrap; /* Prevent wrapping */
     justify-content: space-between;
     overflow-x: auto; /* Allow horizontal scrolling if needed */
+    width: 100%;
 }
 
 .team-member {
