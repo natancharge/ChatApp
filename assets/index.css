@@ -39,7 +39,7 @@ h1.main-title {
 
 .container {
     width: 100%;
-    max-width: 600px; /* Limit the max width of the container */
+    max-width: 1200px; /* Limit the max width of the container */
     padding: 20px;
     text-align: center;
 }
@@ -109,6 +109,7 @@ h1.main-title {
 .about-section {
     margin-top: 40px;
     text-align: right;
+    direction: rtl;
 }
 
 .about-section h2 {
@@ -124,14 +125,16 @@ h1.main-title {
 
 .team {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Prevent wrapping */
     justify-content: space-between;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
 }
 
 .team-member {
-    width: 48%;
-    margin-bottom: 20px;
+    flex: 0 0 auto; /* Ensure team members don't shrink */
+    margin-right: 20px; /* Space between members */
     text-align: center;
+    width: 20%; /* Set a width to ensure wrapping of content inside */
 }
 
 .team-member img {
@@ -151,6 +154,7 @@ h1.main-title {
 .team-member p {
     font-size: 16px;
     color: var(--color-black);
+    text-align: center;
 }
 
 .footer {
