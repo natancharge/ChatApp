@@ -1,14 +1,18 @@
 
 body {
-    background-color : #ededed; font-family : "Open Sans", sans-serif;
+    background-color : var(--color-primary);
+    font-family : "Assistant", "Open Sans", sans-serif;
 }
 
 h1 {
-    padding: 40px; text-align: center; font-size: 1.5em;
+    padding: 40px;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 li a {
-    text-decoration : none; color : #2d2f31;
+    text-decoration : none;
+    color : #2d2f31;
 }
 
 
