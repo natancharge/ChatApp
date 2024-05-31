@@ -72,8 +72,8 @@ html, body {
   text-align: center;
   text-decoration: none;
   transition: color 100ms;
-  user-select: none;
   -webkit-user-select: none;
+  user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
   height: auto;
