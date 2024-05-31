@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-    <div class="container">
-        <select name="" id="">
-            <option value="twoStates">פתרון 2 המדינות</option>
-            <option value="reform">הרפורמה המשפטית</option>
-            <option value="armyLaw">חוק הגיוס</option>
-        </select>
-    </div>
+    <h1>Select a Forum</h1>
+    <form id="forum-form" action="HTML/forum.html" method="GET">
+      <label for="forum">Choose a forum:</label>
+      <select id="forum" name="forum">
+        <option value="general">General Discussion</option>
+        <option value="tech">Technology</option>
+        <option value="health">Health & Wellness</option>
+        <option value="sports">Sports</option>
+      </select>
+      <button type="submit">Go to Forum</button>
+    </form>
     
     <footer class="footer">
       <div class="footer-content">
