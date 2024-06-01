@@ -14,18 +14,18 @@
 </head>
 <body>
     <h1>נא לבחור את הפורום הרצוי</h1>
-    <nav>
 
-        <label for="touch"><span>בחירת פורום</span></label>               
-        <input type="checkbox" id="touch"> 
+    <nav>
+      <label for="touch"><span id="arrow" data-after="↓">בחירת פורום</span></label>
+      <input type="checkbox" id="touch" onclick="changeSymbol()">
       
-        <ul class="slide">
-          <li><a href="forum-reform.html">הרפורמה המשפטית</a></li> 
+      <ul class="slide">
+          <li><a href="forum-reform.html">הרפורמה המשפטית</a></li>
           <li><a href="forum-conscription.html">חוק הגיוס</a></li>
           <li><a href="forum-two-states.html">פתרון 2 המדינות</a></li>
-        </ul>
-      
-    </nav> 
+      </ul>
+    </nav>
+  
     
     <footer class="footer">
       <div class="footer-content">
@@ -34,6 +34,6 @@
         <p class="footer-text">&copy; 2024 .מחוברים. כל הזכויות שמורות</p>
       </div>
     </footer>
-    <script src="../SCRIPT/forum.js"></script>
+    <script src="../SCRIPT/menu.js"></script>
 </body>
 </html>

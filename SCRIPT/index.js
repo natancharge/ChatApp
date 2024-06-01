@@ -42,5 +42,5 @@ document.getElementById("login-form").addEventListener("submit", function(event)
   localStorage.setItem("password", password);
 
   // Redirect to the forum page
-  window.location.href = "HTML/forum.html";
+  window.location.href = "HTML/menu.html";
 });
