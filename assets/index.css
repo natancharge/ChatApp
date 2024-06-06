@@ -137,5 +137,3 @@ h1.main-title {
     color: var(--color-black);
     text-align: center;
 }
-
-@import './_media.css';

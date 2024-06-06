@@ -4,4 +4,25 @@
         align-items: stretch;
         flex-wrap: wrap;
     }
+
+    .team-member {
+        width: 100%; /* Make each team member take full width */
+        margin-bottom: 20px; /* Add space between members */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .team-member img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .team-member h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .team-member p {
+        font-size: 14px;
+    }
 }
