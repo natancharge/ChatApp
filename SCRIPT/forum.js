@@ -8,6 +8,9 @@ window.onload = function() {
     appId: "1:548724108544:web:ceddf339e499ef6ce4d7e5",
     measurementId: "G-Q3L5PLRQS7"
   };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
 }
 
 const myName = localStorage.getItem("username");
