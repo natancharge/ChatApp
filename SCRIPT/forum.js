@@ -1,3 +1,15 @@
+window.onload = function() {
+  const firebaseConfig = {
+    apiKey: "AIzaSyCmmjSORqrQfaw334CdAlXnYA6_rFBeGD8",
+    authDomain: "chatapp-1a0a2.firebaseapp.com",
+    projectId: "chatapp-1a0a2",
+    storageBucket: "chatapp-1a0a2.appspot.com",
+    messagingSenderId: "548724108544",
+    appId: "1:548724108544:web:ceddf339e499ef6ce4d7e5",
+    measurementId: "G-Q3L5PLRQS7"
+  };
+}
+
 const myName = localStorage.getItem("username");
 const myPassword = localStorage.getItem("password");
 
