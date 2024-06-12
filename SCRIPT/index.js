@@ -8,54 +8,54 @@ window.onload = function() {
     appId: "1:548724108544:web:ceddf339e499ef6ce4d7e5",
     measurementId: "G-Q3L5PLRQS7"
   };
-  
+
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
-}
 
-document.getElementById("toggle-password").addEventListener("click", function() {
-  const passwordInput = document.getElementById("password");
-  const togglePasswordIcon = document.getElementById("toggle-password");
-  const togglePasswordOpenIcon = document.getElementById("toggle-password-open");
+  document.getElementById("toggle-password").addEventListener("click", function() {
+    const passwordInput = document.getElementById("password");
+    const togglePasswordIcon = document.getElementById("toggle-password");
+    const togglePasswordOpenIcon = document.getElementById("toggle-password-open");
 
-  if (passwordInput.type === "password") {
+    if (passwordInput.type === "password") {
       passwordInput.type = "text";
       togglePasswordIcon.style.display = "none";
       togglePasswordOpenIcon.style.display = "inline";
-  } else {
+    } else {
       passwordInput.type = "password";
       togglePasswordIcon.style.display = "inline";
       togglePasswordOpenIcon.style.display = "none";
-  }
-});
+    }
+  });
 
-document.getElementById("toggle-password-open").addEventListener("click", function() {
-  const passwordInput = document.getElementById("password");
-  const togglePasswordIcon = document.getElementById("toggle-password");
-  const togglePasswordOpenIcon = document.getElementById("toggle-password-open");
+  document.getElementById("toggle-password-open").addEventListener("click", function() {
+    const passwordInput = document.getElementById("password");
+    const togglePasswordIcon = document.getElementById("toggle-password");
+    const togglePasswordOpenIcon = document.getElementById("toggle-password-open");
 
-  if (passwordInput.type === "text") {
+    if (passwordInput.type === "text") {
       passwordInput.type = "password";
       togglePasswordIcon.style.display = "inline";
       togglePasswordOpenIcon.style.display = "none";
-  } else {
+    } else {
       passwordInput.type = "text";
       togglePasswordIcon.style.display = "none";
       togglePasswordOpenIcon.style.display = "inline";
-  }
-});
+    }
+  });
 
-document.getElementById("login-form").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent the default form submission behavior
+  document.getElementById("login-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
 
-  // Get the username and password from the form inputs
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
+    // Get the username and password from the form inputs
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
 
-  // Save the username and password to localStorage
-  localStorage.setItem("username", username);
-  localStorage.setItem("password", password);
+    // Save the username and password to localStorage
+    localStorage.setItem("username", username);
+    localStorage.setItem("password", password);
 
-  // Redirect to the forum page
-  window.location.href = "HTML/menu.html";
-});
+    // Redirect to the forum page
+    window.location.href = "HTML/menu.html";
+  });
+};
