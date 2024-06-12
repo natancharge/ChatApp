@@ -1,29 +1,16 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyCmmjSORqrQfaw334CdAlXnYA6_rFBeGD8",
-  authDomain: "chatapp-1a0a2.firebaseapp.com",
-  projectId: "chatapp-1a0a2",
-  storageBucket: "chatapp-1a0a2.appspot.com",
-  messagingSenderId: "548724108544",
-  appId: "1:548724108544:web:ceddf339e499ef6ce4d7e5",
-  measurementId: "G-Q3L5PLRQS7"
-};
-
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
-
 document.getElementById("toggle-password").addEventListener("click", function() {
   const passwordInput = document.getElementById("password");
   const togglePasswordIcon = document.getElementById("toggle-password");
   const togglePasswordOpenIcon = document.getElementById("toggle-password-open");
 
   if (passwordInput.type === "password") {
-    passwordInput.type = "text";
-    togglePasswordIcon.style.display = "none";
-    togglePasswordOpenIcon.style.display = "inline";
+      passwordInput.type = "text";
+      togglePasswordIcon.style.display = "none";
+      togglePasswordOpenIcon.style.display = "inline";
   } else {
-    passwordInput.type = "password";
-    togglePasswordIcon.style.display = "inline";
-    togglePasswordOpenIcon.style.display = "none";
+      passwordInput.type = "password";
+      togglePasswordIcon.style.display = "inline";
+      togglePasswordOpenIcon.style.display = "none";
   }
 });
 
@@ -33,13 +20,13 @@ document.getElementById("toggle-password-open").addEventListener("click", functi
   const togglePasswordOpenIcon = document.getElementById("toggle-password-open");
 
   if (passwordInput.type === "text") {
-    passwordInput.type = "password";
-    togglePasswordIcon.style.display = "inline";
-    togglePasswordOpenIcon.style.display = "none";
+      passwordInput.type = "password";
+      togglePasswordIcon.style.display = "inline";
+      togglePasswordOpenIcon.style.display = "none";
   } else {
-    passwordInput.type = "text";
-    togglePasswordIcon.style.display = "none";
-    togglePasswordOpenIcon.style.display = "inline";
+      passwordInput.type = "text";
+      togglePasswordIcon.style.display = "none";
+      togglePasswordOpenIcon.style.display = "inline";
   }
 });
 
